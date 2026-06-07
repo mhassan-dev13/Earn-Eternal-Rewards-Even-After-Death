@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadaqah Jariyah - Endless Rewards</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #0A5C36;
+            --light-green: #E8F5E9;
+            --accent-gold: #C5A880;
+            --dark-text: #2B303A;
+            --light-bg: #F8F9FA;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--dark-text);
+            background-color: var(--light-bg);
+            overflow-x: hidden;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary-green) !important;
+            letter-spacing: 0.5px;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, rgba(10, 92, 54, 0.9), rgba(5, 46, 27, 0.95)), 
+                        url('https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=1920') no-repeat center center/cover;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            position: relative;
+        }
+        .hero-title {
+            font-weight: 700;
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .hero-title { font-size: 2.3rem; }
+        }
+
+        /* Card Custom Styling */
+        .reward-card {
+            background: #ffffff;
+            border: none;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+            height: 100%;
+        }
+        .reward-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(10, 92, 54, 0.12);
+        }
+        .card-img-wrapper {
+            position: relative;
+            height: 220px;
+            overflow: hidden;
+        }
+        .card-img-top {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            transition: transform 0.5s ease;
+        }
+        .reward-card:hover .card-img-top {
+            transform: scale(1.08);
+        }
+        .icon-badge {
+            position: absolute;
+            bottom: -25px;
+            right: 25px;
+            background: var(--primary-green);
+            color: white;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            border: 4px solid #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            z-index: 2;
+        }
+
+        /* Professional Scroll Animations Hooks */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.215, 0.610, 0.355, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Share Section Styling */
+        .share-box {
+            background: linear-gradient(135deg, var(--light-green), #fff);
+            border-left: 5px solid var(--primary-green);
+            border-radius: 12px;
+        }
+
+        /* Custom Alert Notification */
+        .toast-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1060;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-mosque me-2"></i>Sadaqah Jariyah</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active fw-medium" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="#rewards">6 Ways to Earn</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="#share">Spread the Message</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-section">
+        <div class="container text-center text-lg-start">
+            <div class="row align-items-center">
+                <div class="col-lg-7 reveal">
+                    <span class="badge bg-warning text-dark mb-3 px-3 py-2 rounded-pill fw-semibold">Continuous Rewards</span>
+                    <h1 class="hero-title">Earn Eternal Rewards Even After Death</h1>
+                    <p class="lead mb-4 opacity-90">The Prophet Muhammad (ﷺ) said: "When a man dies, his deeds come to an end except for three things: Sadaqah Jariyah (ceaseless charity); a knowledge which is beneficial, or a virtuous descendant who prays for him."</p>
+                    <a href="#rewards" class="btn btn-warning btn-lg px-4 py-2 fw-semibold text-dark rounded-pill shadow-sm transition-all">Explore 6 Ways</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="rewards" class="container py-5 my-5">
+        <div class="text-center mb-5 reveal">
+            <h2 class="fw-bold position-relative d-inline-block pb-2">
+                6 Acts of Continuous Charity
+                <span class="position-absolute bottom-0 start-50 translate-middle-x bg-success" style="width: 60px; height: 3px;"></span>
+            </h2>
+            <p class="text-muted mt-2">Invest in your hereafter by implementing these easy, highly-rewarding deeds today.</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4 reveal">
+                <div class="card reward-card">
+                    <div class="card-img-wrapper">
+                        <img src="bluepocket8_11zon.jpg" class="card-img-top" alt="Holy Quran">
+                        <div class="icon-badge"><i class="fa-solid fa-book-quran"></i></div>
+                    </div>
+                    <div class="card-body p-4 pt-4">
+                        <h4 class="card-title fw-bold h5">1. Gift a Holy Qur'an</h4>
+                        <p class="card-text text-muted">Provide a copy of the Holy Qur'an to an individual, a school, or a local mosque. Every single time a letter from it is recited, an immense spiritual reward is directly credited to your account.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 reveal">
+                <div class="card reward-card">
+                    <div class="card-img-wrapper">
+                        <img src="Wheelchair.webp" class="card-img-top" alt="Wheelchair donation">
+                        <div class="icon-badge"><i class="fa-solid fa-wheelchair"></i></div>
+                    </div>
+                    <div class="card-body p-4 pt-4">
+                        <h4 class="card-title fw-bold h5">2. Donate a Wheelchair</h4>
+                        <p class="card-text text-muted">Donate mobility equipment or medical resources to a hospital or clinic. Every single instance an ailing, sick, or elderly person finds comfort and uses it, you gain persistent blessings.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 reveal">
+                <div class="card reward-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&q=80&w=600" class="card-img-top" alt="Masjid Construction">
+                        <div class="icon-badge"><i class="fa-solid fa-mosque"></i></div>
+                    </div>
+                    <div class="card-body p-4 pt-4">
+                        <h4 class="card-title fw-bold h5">3. Build a Masjid</h4>
+                        <p class="card-text text-muted">Participate financially or physically in building or maintaining a mosque. You earn continuous rewards for every single prayer, prostration, and remembrance of Allah made inside it.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 reveal">
+                <div class="card reward-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&q=80&w=600" class="card-img-top" alt="Clean Water Supply">
+                        <div class="icon-badge"><i class="fa-solid fa-faucet-drip"></i></div>
+                    </div>
+                    <div class="card-body p-4 pt-4">
+                        <h4 class="card-title fw-bold h5">4. Provide Clean Water</h4>
+                        <p class="card-text text-muted">Place a functioning water cooler, filtration plant, or dig a water well in a crowded public space. Providing access to clean water is highly emphasized as one of the best forms of charity.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 reveal">
+                <div class="card reward-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&q=80&w=600" class="card-img-top" alt="Planting Trees">
+                        <div class="icon-badge"><i class="fa-solid fa-tree"></i></div>
+                    </div>
+                    <div class="card-body p-4 pt-4">
+                        <h4 class="card-title fw-bold h5">5. Plant a Tree</h4>
+                        <p class="card-text text-muted">Plant a tree or a crop field. Every time a human seeker, a passing traveler, a bird, or an animal consumes its fresh fruit or finds comfortable shade underneath it, you gain automated continuous reward.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 reveal">
+                <div class="card reward-card border border-warning">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&q=80&w=600" class="card-img-top" alt="Share Knowledge">
+                        <div class="icon-badge bg-warning text-dark"><i class="fa-solid fa-share-nodes"></i></div>
+                    </div>
+                    <div class="card-body p-4 pt-4">
+                        <h4 class="card-title fw-bold h5">6. Spread Beneficial Knowledge</h4>
+                        <p class="card-text text-muted">And the easiest method: Share this message with others. Simply spreading beneficial knowledge grants you equivalent rewards whenever an inspired individual acts upon any item listed here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section id="share" class="py-5 bg-white border-top">
+        <div class="container my-4 reveal">
+            <div class="share-box p-4 p-md-5 shadow-sm text-center text-md-start">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 mb-4 mb-lg-0">
+                        <h3 class="fw-bold text-success mb-2">Ready to earn your first reward right now?</h3>
+                        <p class="text-muted mb-0">Copy the structured text formatting below or immediately share it to make an impact across your social channels. May Allah reward you beautifully.</p>
+                    </div>
+                    <div class="col-lg-4 text-md-end text-center">
+                        <button id="copyBtn" class="btn btn-success btn-lg px-4 rounded-pill shadow-sm transition-all me-2">
+                            <i class="fa-regular fa-copy me-2"></i> Copy Message
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-1 fw-medium">"May Allah help and guide everyone."</p>
+            <small class="opacity-50">&copy; 2026 Sadaqah Jariyah Platform. Built Responsively.</small>
+        </div>
+    </footer>
+
+    <div class="toast-container">
+        <div id="liveToast" class="toast align-items-center text-white bg-success border-0 shadow" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    <i class="fa-regular fa-circle-check me-2"></i> Message copied to clipboard successfully!
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // 1. Smooth Scroll Reveal Logic (Intersection Observer Engine)
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        const revealOnScroll = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target); 
+                }
+            });
+        }, {
+            threshold: 0.12, 
+            rootMargin: "0px 0px -50px 0px"
+        });
+
+        revealElements.forEach(element => {
+            revealOnScroll.observe(element);
+        });
+
+        // 2. Functional Clipboard Action Mechanism
+        document.getElementById('copyBtn').addEventListener('click', function() {
+            const compiledText = `Six ways to earn even after death:\n\n1. Give someone a copy of Qur'an, every time they read it you earn.\n2. Donate a wheelchair to a hospital, every time someone sick sits in it you gain.\n3. Participate in building a masjid.\n4. Place a watercooler in a public space.\n5. Plant a tree, every time a human or animal sits in its shade you gain.\n6. And the easiest, share this message with others. Whenever someone reads it, you gain.\n\nMay Allah help everyone.`;
+            
+            navigator.clipboard.writeText(compiledText).then(() => {
+                const toastElement = document.getElementById('liveToast');
+                const toast = new bootstrap.Toast(toastElement);
+                toast.show();
+            }).catch(err => {
+                console.error('Could not copy text: ', err);
+            });
+        });
+    </script>
+</body>
+</html>
