@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="rfWoy1HWtlaCHy5CN8coHj37R3y__MUSgHewu0D3lo8" />
+    <meta name="google-site-verification" content="rfWoy1HWtlaCHy5CN8coHj37R3y__MUSgHewu0D3lo8" />    
     <link rel="canonical" href="https://mhassan-dev13.github.io/Earn-Eternal-Rewards-Even-After-Death/">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
@@ -17,7 +17,72 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mhassan-dev13.github.io/Earn-Eternal-Rewards-Even-After-Death/">
 
-    
+    <!-- FAQ Structured Data (Google FAQ rich results ke liye) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is Sadaqah Jariyah?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sadaqah Jariyah means ongoing charity — a good deed whose reward keeps flowing for as long as people benefit from it, even after the giver has passed away. It is different from a one-time donation: a well keeps giving water, a masjid keeps hosting prayers, and knowledge keeps being passed on."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I give Sadaqah Jariyah on behalf of someone who has passed away?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. You can give charity on behalf of a deceased parent or loved one, and the reward reaches them. One well-known example is giving water: when Sa'd ibn 'Ubadah asked the Prophet (peace be upon him) about the best charity for his late mother, he was told that giving water is among the best."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the best form of Sadaqah Jariyah?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The best act is the one you can do sincerely and consistently. A small deed done regularly is more beloved to Allah than a large deed done once and abandoned. Choose an act you can repeat — even a small monthly donation, a tree planted every year, or knowledge shared every week."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does building a masjid count as Sadaqah Jariyah?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Every prayer, recitation, and remembrance of Allah that takes place in a masjid you helped build or maintain becomes part of your ongoing reward. You do not need to fund an entire masjid — even a small contribution towards its construction or upkeep counts."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "I have very little money. Can I still earn ongoing rewards?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Absolutely. Sadaqah Jariyah is not only about money. Planting a tree costs almost nothing, yet as long as any person, bird, or animal benefits from its shade or fruit, your reward continues. Likewise, sharing beneficial knowledge costs nothing but keeps rewarding you."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does sharing knowledge and this page count as a good deed?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Teaching and spreading beneficial knowledge is one of the three deeds that continue after death. The Prophet (peace be upon him) said the best among people are those who learn the Quran and teach it. Sharing this page, teaching a skill, or passing on a useful lesson all fall under beneficial knowledge."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Will even a small good deed be rewarded?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes — nothing good is ever wasted. The Quran tells us that whoever does an atom's weight of good will see it, and that charity given in the way of Allah is multiplied like a single seed growing into seven ears, each with a hundred grains."
+                }
+            }
+        ]
+    }
+    </script>
+
     <style>
         :root {
             --primary-green: #0A5C36;
@@ -32,6 +97,11 @@
             color: var(--dark-text);
             background-color: var(--light-bg);
             overflow-x: hidden;
+        }
+
+        /* Sticky navbar ke neeche anchor headings chhupne se bachane ke liye */
+        header[id], section[id], main[id] {
+            scroll-margin-top: 76px;
         }
 
         /* Navbar Styling */
@@ -49,7 +119,7 @@
 
         /* Hero Section */
         .hero-section {
-            background: linear-gradient(135deg, rgba(10, 92, 54, 0.9), rgba(5, 46, 27, 0.95)), 
+            background: linear-gradient(135deg, rgba(10, 92, 54, 0.9), rgba(5, 46, 27, 0.95)),
                         url('https://images.pexels.com/photos/36513378/pexels-photo-36513378/free-photo-of-coran-abierto-con-rosarios-en-una-mezquita.jpeg?auto=compress&cs=tinysrgb&w=1920') no-repeat center center/cover;
             min-height: 80vh;
             display: flex;
@@ -130,6 +200,77 @@
             border-radius: 12px;
         }
 
+        /* ============ FAQ SECTION STYLING ============ */
+        .faq-section {
+            background: #ffffff;
+        }
+        .faq-heading {
+            font-size: clamp(1.6rem, 4vw, 2.25rem);
+        }
+        .faq-accordion .accordion-item {
+            border: 1px solid #e9ecef;
+            border-radius: 14px !important;
+            overflow: hidden;
+            margin-bottom: 0.9rem;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.03);
+        }
+        .faq-accordion .accordion-button {
+            font-weight: 600;
+            font-size: 1.02rem;
+            color: var(--dark-text);
+            background: #ffffff;
+            padding: 1.15rem 1.35rem;
+            gap: 0.75rem;
+            text-align: left;
+        }
+        .faq-accordion .accordion-button:not(.collapsed) {
+            color: var(--primary-green);
+            background: var(--light-green);
+            box-shadow: none;
+        }
+        .faq-accordion .accordion-button:focus {
+            box-shadow: 0 0 0 0.2rem rgba(10, 92, 54, 0.15);
+            border-color: transparent;
+        }
+        .faq-accordion .accordion-button::after {
+            flex-shrink: 0;
+        }
+        .faq-accordion .accordion-body {
+            padding: 0 1.35rem 1.35rem;
+            color: #555;
+            line-height: 1.75;
+            font-size: 0.98rem;
+        }
+        .faq-ref {
+            display: block;
+            margin-top: 0.75rem;
+            font-size: 0.85rem;
+            color: var(--primary-green);
+            font-weight: 600;
+        }
+        .faq-ref i {
+            color: var(--accent-gold);
+        }
+        .faq-cta {
+            background: linear-gradient(135deg, var(--light-green), #fff);
+            border: 1px solid #d7ead9;
+            border-radius: 12px;
+        }
+        /* Mobile / small screens */
+        @media (max-width: 576px) {
+            .faq-accordion .accordion-button {
+                font-size: 0.95rem;
+                padding: 1rem;
+            }
+            .faq-accordion .accordion-body {
+                font-size: 0.92rem;
+                padding: 0 1rem 1rem;
+            }
+            .faq-ref {
+                font-size: 0.8rem;
+            }
+        }
+
         /* Custom Alert Notification */
         .toast-container {
             position: fixed;
@@ -151,6 +292,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active fw-medium" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link fw-medium" href="#rewards">6 Ways to Earn</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="#faq">FAQ</a></li>
                     <li class="nav-item"><a class="nav-link fw-medium" href="#share">Spread the Message</a></li>
                 </ul>
             </div>
@@ -260,6 +402,136 @@
         </div>
     </main>
 
+    <!-- ================= FAQ SECTION ================= -->
+    <section id="faq" class="faq-section py-5 border-top">
+        <div class="container py-3 py-md-4 reveal">
+            <div class="text-center mb-4 mb-md-5">
+                <h2 class="faq-heading fw-bold position-relative d-inline-block pb-2">
+                    Frequently Asked Questions
+                    <span class="position-absolute bottom-0 start-50 translate-middle-x bg-success" style="width: 60px; height: 3px;"></span>
+                </h2>
+                <p class="text-muted mt-2">Answers about Sadaqah Jariyah and good deeds — with references.</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10 col-xl-9">
+                    <div class="accordion faq-accordion" id="faqAccordion">
+
+                        <!-- Q1 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="faqHeadingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
+                                    What is Sadaqah Jariyah?
+                                </button>
+                            </h3>
+                            <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sadaqah Jariyah means ongoing charity — a good deed whose reward keeps flowing for as long as people benefit from it, even after the giver has passed away. It is different from a one-time donation: a well keeps giving water, a masjid keeps hosting prayers, and knowledge keeps being passed on.
+                                    <span class="faq-ref"><i class="fa-solid fa-book-open me-1"></i> Reference: Sahih Muslim, Hadith 1631 — the Prophet (ﷺ) said that when a person dies, their deeds end except for three things: ongoing charity, beneficial knowledge, or a righteous child who prays for them.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q2 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="faqHeadingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                                    Can I give Sadaqah Jariyah on behalf of someone who has passed away?
+                                </button>
+                            </h3>
+                            <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes. You can give charity on behalf of a deceased parent or loved one, and the reward reaches them. One well-known example is giving water: when Sa'd ibn 'Ubadah asked the Prophet (ﷺ) about the best charity for his late mother, he was told that giving water is among the best.
+                                    <span class="faq-ref"><i class="fa-solid fa-book-open me-1"></i> Reference: Sahih al-Bukhari, Hadith 1388 (charity on behalf of a deceased parent); Sunan Abi Dawud, Hadith 1679 (giving water as charity).</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q3 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="faqHeadingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+                                    What is the best form of Sadaqah Jariyah?
+                                </button>
+                            </h3>
+                            <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    The best act is the one you can do sincerely and consistently. A small deed done regularly is more beloved to Allah than a large deed done once and abandoned. So choose an act you can repeat — even a small monthly donation, a tree planted every year, or knowledge shared every week.
+                                    <span class="faq-ref"><i class="fa-solid fa-book-open me-1"></i> Reference: Sahih al-Bukhari, Hadith 6465 — "The most beloved deeds to Allah are the most consistent, even if small."</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q4 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="faqHeadingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+                                    Does building a masjid count as Sadaqah Jariyah?
+                                </button>
+                            </h3>
+                            <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes. Every prayer, recitation, and remembrance of Allah that takes place in a masjid you helped build or maintain becomes part of your ongoing reward. You do not need to fund an entire masjid — even a small contribution towards its construction or upkeep counts.
+                                    <span class="faq-ref"><i class="fa-solid fa-book-open me-1"></i> Reference: Sahih al-Bukhari, Hadith 450; Sahih Muslim, Hadith 533 — "Whoever builds a mosque for Allah, Allah will build for him a house in Paradise."</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q5 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="faqHeadingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive">
+                                    I have very little money. Can I still earn ongoing rewards?
+                                </button>
+                            </h3>
+                            <div id="faqCollapseFive" class="accordion-collapse collapse" aria-labelledby="faqHeadingFive" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolutely. Sadaqah Jariyah is not only about money. Planting a tree costs almost nothing, yet as long as any person, bird, or animal benefits from its shade or fruit, your reward continues. Likewise, sharing beneficial knowledge — teaching someone a skill, a verse, or a good habit — costs nothing but keeps rewarding you.
+                                    <span class="faq-ref"><i class="fa-solid fa-book-open me-1"></i> Reference: Sahih Muslim, Hadith 1552 — no Muslim plants a tree from which a bird, person, or animal eats, except that it is charity for them.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q6 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="faqHeadingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseSix" aria-expanded="false" aria-controls="faqCollapseSix">
+                                    Does sharing knowledge and this page count as a good deed?
+                                </button>
+                            </h3>
+                            <div id="faqCollapseSix" class="accordion-collapse collapse" aria-labelledby="faqHeadingSix" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes. Teaching and spreading beneficial knowledge is one of the three deeds that continue after death. The Prophet (ﷺ) said the best among people are those who learn the Qur'an and teach it. Sharing this page, teaching a skill, or passing on a useful lesson all fall under beneficial knowledge.
+                                    <span class="faq-ref"><i class="fa-solid fa-book-open me-1"></i> Reference: Sahih al-Bukhari, Hadith 5027; Sahih Muslim, Hadith 1631.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q7 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="faqHeadingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseSeven" aria-expanded="false" aria-controls="faqCollapseSeven">
+                                    Will even a small good deed be rewarded?
+                                </button>
+                            </h3>
+                            <div id="faqCollapseSeven" class="accordion-collapse collapse" aria-labelledby="faqHeadingSeven" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes — nothing good is ever wasted. The Qur'an tells us that whoever does an atom's weight of good will see it, and that charity given in the way of Allah is multiplied like a single seed growing into seven ears, each with a hundred grains.
+                                    <span class="faq-ref"><i class="fa-solid fa-book-open me-1"></i> Reference: Surah Az-Zalzalah (99:7); Surah Al-Baqarah (2:261).</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="faq-cta p-3 p-md-4 mt-4 text-center">
+                        <p class="mb-0"><strong>Have another question?</strong> Start with one act today — even sharing this page is Sadaqah Jariyah.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="share" class="py-5 bg-white border-top">
         <div class="container my-4 reveal">
             <div class="share-box p-4 p-md-5 shadow-sm text-center text-md-start">
@@ -301,16 +573,16 @@
     <script>
         // 1. Smooth Scroll Reveal Logic (Intersection Observer Engine)
         const revealElements = document.querySelectorAll('.reveal');
-        
+
         const revealOnScroll = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('active');
-                    observer.unobserve(entry.target); 
+                    observer.unobserve(entry.target);
                 }
             });
         }, {
-            threshold: 0.12, 
+            threshold: 0.12,
             rootMargin: "0px 0px -50px 0px"
         });
 
@@ -321,7 +593,7 @@
         // 2. Functional Clipboard Action Mechanism
         document.getElementById('copyBtn').addEventListener('click', function() {
             const compiledText = `Six ways to earn even after death:\n\n1. Give someone a copy of Qur'an, every time they read it you earn.\n2. Donate a wheelchair to a hospital, every time someone sick sits in it you gain.\n3. Participate in building a masjid.\n4. Place a watercooler in a public space.\n5. Plant a tree, every time a human or animal sits in its shade you gain.\n6. And the easiest, share this message with others. Whenever someone reads it, you gain.\n\nMay Allah help everyone.`;
-            
+
             navigator.clipboard.writeText(compiledText).then(() => {
                 const toastElement = document.getElementById('liveToast');
                 const toast = new bootstrap.Toast(toastElement);
