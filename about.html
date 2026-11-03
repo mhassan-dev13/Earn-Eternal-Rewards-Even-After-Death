@@ -12,7 +12,6 @@
     <title>About | Sadaqah Jariyah: 6 Acts That Earn Rewards Even After Death</title>
     <meta name="description" content="About this Sadaqah Jariyah site: what it is, what it is not, and the 6 acts of ongoing charity that earn rewards even after death.">
 
-    <!-- Social sharing (WhatsApp / Facebook preview ke liye) -->
     <meta property="og:title" content="About | Sadaqah Jariyah: 6 Acts That Earn Rewards Even After Death">
     <meta property="og:description" content="About this Sadaqah Jariyah site: what it is, what it is not, and the 6 acts of ongoing charity that earn rewards even after death.">
     <meta property="og:type" content="website">
@@ -35,12 +34,10 @@
             overflow-x: hidden;
         }
 
-        /* Sticky navbar ke neeche anchor headings chhupne se bachane ke liye */
         header[id], section[id], main[id] {
             scroll-margin-top: 76px;
         }
 
-        /* Navbar Styling */
         .navbar {
             background-color: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
@@ -53,7 +50,6 @@
             letter-spacing: 0.5px;
         }
 
-        /* Hero Section */
         .hero-section {
             background: linear-gradient(135deg, rgba(10, 92, 54, 0.9), rgba(5, 46, 27, 0.95)),
                         url('https://images.pexels.com/photos/36513378/pexels-photo-36513378/free-photo-of-coran-abierto-con-rosarios-en-una-mezquita.jpeg?auto=compress&cs=tinysrgb&w=1920') no-repeat center center/cover;
@@ -72,7 +68,6 @@
             .hero-title { font-size: 2.3rem; }
         }
 
-        /* Card Custom Styling */
         .reward-card {
             background: #ffffff;
             border: none;
@@ -118,7 +113,6 @@
             z-index: 2;
         }
 
-        /* Professional Scroll Animations Hooks */
         .reveal {
             opacity: 0;
             transform: translateY(40px);
@@ -129,14 +123,12 @@
             transform: translateY(0);
         }
 
-        /* Share Section Styling */
         .share-box {
             background: linear-gradient(135deg, var(--light-green), #fff);
             border-left: 5px solid var(--primary-green);
             border-radius: 12px;
         }
 
-        /* ============ FAQ SECTION STYLING ============ */
         .faq-section {
             background: #ffffff;
         }
@@ -192,7 +184,6 @@
             border: 1px solid #d7ead9;
             border-radius: 12px;
         }
-        /* Mobile / small screens */
         @media (max-width: 576px) {
             .faq-accordion .accordion-button {
                 font-size: 0.95rem;
@@ -207,7 +198,6 @@
             }
         }
 
-        /* Custom Alert Notification */
         .toast-container {
             position: fixed;
             bottom: 20px;
@@ -238,21 +228,21 @@
     <header class="py-5" style="background: linear-gradient(135deg, rgba(10, 92, 54, 0.95), rgba(5, 46, 27, 0.95)); color: white;">
         <div class="container py-4">
             <h1 class="fw-bold">About This Site</h1>
-            <p class="lead opacity-90 mb-0">A simple, free guide to Sadaqah Jariyah — ongoing charity that keeps rewarding you even after death.</p>
+            <p class="lead opacity-90 mb-0">A simple, free guide to Sadaqah Jariyah ongoing charity that keeps rewarding you even after death.</p>
         </div>
     </header>
 
     <main class="container py-5">
         <div class="row justify-content-center"><div class="col-12 col-lg-10">
             <h2 class="fw-bold mb-3">What is this site?</h2>
-            <p class="text-muted">This site explains Sadaqah Jariyah in simple words, with hadith references, and lists 6 acts you can start today: gift a Holy Qur'an, donate a wheelchair, build a masjid, provide clean water, plant a tree, and spread beneficial knowledge.</p>
+            <p class="text-muted">This site explains Sadaqah Jariyah in simple words, with hadith references, and lists 6 acts you can start today: gift a Holy Quran, donate a wheelchair, build a masjid, provide clean water, plant a tree and spread beneficial knowledge.</p>
             <h2 class="fw-bold mb-3 mt-5">What this site is not</h2>
-            <p class="text-muted">This is an informational guide, not a donation collection site. It does not collect money, and it does not replace a scholar for personal religious questions. For giving, always use a trusted organisation or give directly in your own community.</p>
+            <p class="text-muted">This is an informational guide, not a donation collection site. It does not collect money, and it does not replace a scholar for personal religious questions. For giving always use a trusted organisation or give directly in your own community.</p>
             <h2 class="fw-bold mb-3 mt-5">Our message, in one line</h2>
-            <p class="text-muted">Start with one act today — even sharing this page is Sadaqah Jariyah, because every person who acts on it becomes part of your ongoing reward.</p>
+            <p class="text-muted">Start with one act today even sharing this page is Sadaqah Jariyah, because every person who acts on it becomes part of your ongoing reward.</p>
             <div class="row g-4 mt-2">
                 <div class="col-12 col-md-6"><div class="card reward-card"><div class="card-body p-4"><h4 class="h5 fw-bold">6 Acts</h4><p class="text-muted">See all 6 acts with references on the home page.</p><a href="index.html#rewards" class="btn btn-success rounded-pill">View 6 Acts</a></div></div></div>
-                <div class="col-12 col-md-6"><div class="card reward-card"><div class="card-body p-4"><h4 class="h5 fw-bold">Blog</h4><p class="text-muted">Short articles on ongoing charity, deceased parents, and starting with little money.</p><a href="blog.html" class="btn btn-success rounded-pill">Read the Blog</a></div></div></div>
+                <div class="col-12 col-md-6"><div class="card reward-card"><div class="card-body p-4"><h4 class="h5 fw-bold">Blog</h4><p class="text-muted">Short articles on ongoing charity, deceased parents and starting with little money.</p><a href="blog.html" class="btn btn-success rounded-pill">Read the Blog</a></div></div></div>
             </div>
         </div></div>
     </main>
@@ -278,7 +268,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        // 1. Smooth Scroll Reveal Logic (Intersection Observer Engine)
         const revealElements = document.querySelectorAll('.reveal');
 
         const revealOnScroll = new IntersectionObserver((entries, observer) => {
@@ -297,9 +286,8 @@
             revealOnScroll.observe(element);
         });
 
-        // 2. Functional Clipboard Action Mechanism
         document.getElementById('copyBtn').addEventListener('click', function() {
-            const compiledText = `Six ways to earn even after death:\n\n1. Give someone a copy of Qur'an, every time they read it you earn.\n2. Donate a wheelchair to a hospital, every time someone sick sits in it you gain.\n3. Participate in building a masjid.\n4. Place a watercooler in a public space.\n5. Plant a tree, every time a human or animal sits in its shade you gain.\n6. And the easiest, share this message with others. Whenever someone reads it, you gain.\n\nMay Allah help everyone.`;
+            const compiledText = `Six ways to earn even after death:\n\n1. Give someone a copy of Quran every time they read it you earn.\n2. Donate a wheelchair to a hospital every time someone sick sits in it you gain.\n3. Participate in building a masjid.\n4. Place a watercooler in a public space.\n5. Plant a tree every time a human or animal sits in its shade you gain.\n6. And the easiest share this message with others. Whenever someone reads it you gain.\n\nMay Allah help everyone.`;
 
             navigator.clipboard.writeText(compiledText).then(() => {
                 const toastElement = document.getElementById('liveToast');
