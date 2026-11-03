@@ -221,11 +221,11 @@
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html"><i class="fa-solid fa-mosque me-2"></i>Sadaqah Jariyah</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto gap-lg-1">
                     <li class="nav-item"><a class="nav-link fw-medium" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link fw-medium" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link active fw-medium" href="blog.html">Blog</a></li>
@@ -250,7 +250,7 @@
                     <small class="text-muted">3 November 2026</small>
                     <h4 class="h5 fw-bold mt-2">What is Sadaqah Jariyah?</h4>
                     <p class="text-muted">Ongoing charity — a good deed whose reward keeps flowing for as long as people benefit from it, even after death.</p>
-                    <a href="index.html#what-is" class="btn btn-success rounded-pill">Read More</a>
+                    <a href="blog-what-is-sadaqah-jariyah.html" class="btn btn-success rounded-pill">Read More</a>
                 </div></div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 reveal">
@@ -258,7 +258,7 @@
                     <small class="text-muted">3 November 2026</small>
                     <h4 class="h5 fw-bold mt-2">Sadaqah Jariyah for Deceased Parents</h4>
                     <p class="text-muted">How to honour deceased parents with lasting charity — water, education, a masjid, or a tree, given in their name.</p>
-                    <a href="index.html#deceased" class="btn btn-success rounded-pill">Read More</a>
+                    <a href="blog-sadaqah-jariyah-for-deceased-parents.html" class="btn btn-success rounded-pill">Read More</a>
                 </div></div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 reveal">
@@ -266,7 +266,7 @@
                     <small class="text-muted">3 November 2026</small>
                     <h4 class="h5 fw-bold mt-2">How to Start With Little or No Money</h4>
                     <p class="text-muted">Plant a tree, share knowledge, or give a small amount regularly — consistency beats a large deed done once.</p>
-                    <a href="index.html#start" class="btn btn-success rounded-pill">Read More</a>
+                    <a href="blog-how-to-start-sadaqah-jariyah-little-money.html" class="btn btn-success rounded-pill">Read More</a>
                 </div></div>
             </div>
         </div>
@@ -291,7 +291,6 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
         // 1. Smooth Scroll Reveal Logic (Intersection Observer Engine)
@@ -313,18 +312,12 @@
             revealOnScroll.observe(element);
         });
 
-        // 2. Functional Clipboard Action Mechanism
-        document.getElementById('copyBtn').addEventListener('click', function() {
-            const compiledText = `Six ways to earn even after death:\n\n1. Give someone a copy of Qur'an, every time they read it you earn.\n2. Donate a wheelchair to a hospital, every time someone sick sits in it you gain.\n3. Participate in building a masjid.\n4. Place a watercooler in a public space.\n5. Plant a tree, every time a human or animal sits in its shade you gain.\n6. And the easiest, share this message with others. Whenever someone reads it, you gain.\n\nMay Allah help everyone.`;
-
-            navigator.clipboard.writeText(compiledText).then(() => {
-                const toastElement = document.getElementById('liveToast');
-                const toast = new bootstrap.Toast(toastElement);
-                toast.show();
-            }).catch(err => {
-                console.error('Could not copy text: ', err);
-            });
-        });
+    <script>
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealOnScroll = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('active'); observer.unobserve(entry.target); } });
+        }, { threshold: 0.12, rootMargin: "0px 0px -50px 0px" });
+        revealElements.forEach(element => { revealOnScroll.observe(element); });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
