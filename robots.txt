@@ -1,6 +1,3 @@
-# robots.txt — Googlebot aur baaki crawlers ke liye rules
-# Is file ko repo ke ROOT mein rakho (index.html aur sitemap.xml ke saath)
-
 User-agent: *
 Allow: /
 
