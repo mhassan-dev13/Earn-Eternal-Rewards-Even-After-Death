@@ -1,32 +1,33 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://mhassan-dev13.github.io/Earn-Eternal-Rewards-Even-After-Death/</loc>
-    <lastmod>2026-11-06T00:00:00+00:00</lastmod>
   </url>
+
   <url>
     <loc>https://mhassan-dev13.github.io/Earn-Eternal-Rewards-Even-After-Death/about.html</loc>
-    <lastmod>2026-11-06T00:00:00+00:00</lastmod>
   </url>
+
   <url>
     <loc>https://mhassan-dev13.github.io/Earn-Eternal-Rewards-Even-After-Death/blog.html</loc>
-    <lastmod>2026-11-06T00:00:00+00:00</lastmod>
   </url>
+
   <url>
     <loc>https://mhassan-dev13.github.io/Earn-Eternal-Rewards-Even-After-Death/contact.html</loc>
-    <lastmod>2026-11-06T00:00:00+00:00</lastmod>
   </url>
+
   <url>
     <loc>https://mhassan-dev13.github.io/Earn-Eternal-Rewards-Even-After-Death/blog-what-is-sadaqah-jariyah.html</loc>
-    <lastmod>2026-11-06T00:00:00+00:00</lastmod>
   </url>
+
   <url>
     <loc>https://mhassan-dev13.github.io/Earn-Eternal-Rewards-Even-After-Death/blog-sadaqah-jariyah-for-deceased-parents.html</loc>
-    <lastmod>2026-11-06T00:00:00+00:00</lastmod>
   </url>
+
   <url>
     <loc>https://mhassan-dev13.github.io/Earn-Eternal-Rewards-Even-After-Death/blog-how-to-start-sadaqah-jariyah-little-money.html</loc>
-    <lastmod>2026-11-06T00:00:00+00:00</lastmod>
   </url>
+
 </urlset>
