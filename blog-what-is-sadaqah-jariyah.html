@@ -9,216 +9,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>What is Sadaqah Jariyah? Ongoing Charity Explained | Sadaqah Jariyah</title>
-    <meta name="description" content="What is Sadaqah Jariyah? Ongoing charity explained: the hadith of Sahih Muslim 1631, examples, and how it differs from one-time sadaqah, zakat and waqf.">
+    <meta name="description" content="What is Sadaqah Jariyah? Ongoing charity explained: the hadith of Sahih Muslim 1631, examples and how it differs from one-time sadaqah, zakat and waqf.">
 
     <!-- Social sharing (WhatsApp / Facebook preview ke liye) -->
     <meta property="og:title" content="What is Sadaqah Jariyah? Ongoing Charity Explained | Sadaqah Jariyah">
-    <meta property="og:description" content="What is Sadaqah Jariyah? Ongoing charity explained: the hadith of Sahih Muslim 1631, examples, and how it differs from one-time sadaqah, zakat and waqf.">
+    <meta property="og:description" content="What is Sadaqah Jariyah? Ongoing charity explained: the hadith of Sahih Muslim 1631, examples and how it differs from one-time sadaqah, zakat and waqf.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mhassan-dev13.github.io/Earn-Eternal-Rewards-Even-After-Death/blog-what-is-sadaqah-jariyah.html">
 
-
-    <style>
-        :root {
-            --primary-green: #0A5C36;
-            --light-green: #E8F5E9;
-            --accent-gold: #C5A880;
-            --dark-text: #2B303A;
-            --light-bg: #F8F9FA;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            color: var(--dark-text);
-            background-color: var(--light-bg);
-            overflow-x: hidden;
-        }
-
-        /* Sticky navbar ke neeche anchor headings chhupne se bachane ke liye */
-        header[id], section[id], main[id] {
-            scroll-margin-top: 76px;
-        }
-
-        /* Navbar Styling */
-        .navbar {
-            background-color: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
-            transition: all 0.3s ease;
-        }
-        .navbar-brand {
-            font-weight: 700;
-            color: var(--primary-green) !important;
-            letter-spacing: 0.5px;
-        }
-
-        /* Hero Section */
-        .hero-section {
-            background: linear-gradient(135deg, rgba(10, 92, 54, 0.9), rgba(5, 46, 27, 0.95)),
-                        url('https://images.pexels.com/photos/36513378/pexels-photo-36513378/free-photo-of-coran-abierto-con-rosarios-en-una-mezquita.jpeg?auto=compress&cs=tinysrgb&w=1920') no-repeat center center/cover;
-            min-height: 80vh;
-            display: flex;
-            align-items: center;
-            color: white;
-            position: relative;
-        }
-        .hero-title {
-            font-weight: 700;
-            font-size: 3.5rem;
-            margin-bottom: 1.5rem;
-        }
-        @media (max-width: 768px) {
-            .hero-title { font-size: 2.3rem; }
-        }
-
-        /* Card Custom Styling */
-        .reward-card {
-            background: #ffffff;
-            border: none;
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
-            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
-            height: 100%;
-        }
-        .reward-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(10, 92, 54, 0.12);
-        }
-        .card-img-wrapper {
-            position: relative;
-            height: 220px;
-            overflow: hidden;
-        }
-        .card-img-top {
-            object-fit: cover;
-            height: 100%;
-            width: 100%;
-            transition: transform 0.5s ease;
-        }
-        .reward-card:hover .card-img-top {
-            transform: scale(1.08);
-        }
-        .icon-badge {
-            position: absolute;
-            bottom: -25px;
-            right: 25px;
-            background: var(--primary-green);
-            color: white;
-            width: 55px;
-            height: 55px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.4rem;
-            border: 4px solid #fff;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-            z-index: 2;
-        }
-
-        /* Professional Scroll Animations Hooks */
-        .reveal {
-            opacity: 0;
-            transform: translateY(40px);
-            transition: all 0.8s cubic-bezier(0.215, 0.610, 0.355, 1);
-        }
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Share Section Styling */
-        .share-box {
-            background: linear-gradient(135deg, var(--light-green), #fff);
-            border-left: 5px solid var(--primary-green);
-            border-radius: 12px;
-        }
-
-        /* ============ FAQ SECTION STYLING ============ */
-        .faq-section {
-            background: #ffffff;
-        }
-        .faq-heading {
-            font-size: clamp(1.6rem, 4vw, 2.25rem);
-        }
-        .faq-accordion .accordion-item {
-            border: 1px solid #e9ecef;
-            border-radius: 14px !important;
-            overflow: hidden;
-            margin-bottom: 0.9rem;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.03);
-        }
-        .faq-accordion .accordion-button {
-            font-weight: 600;
-            font-size: 1.02rem;
-            color: var(--dark-text);
-            background: #ffffff;
-            padding: 1.15rem 1.35rem;
-            gap: 0.75rem;
-            text-align: left;
-        }
-        .faq-accordion .accordion-button:not(.collapsed) {
-            color: var(--primary-green);
-            background: var(--light-green);
-            box-shadow: none;
-        }
-        .faq-accordion .accordion-button:focus {
-            box-shadow: 0 0 0 0.2rem rgba(10, 92, 54, 0.15);
-            border-color: transparent;
-        }
-        .faq-accordion .accordion-button::after {
-            flex-shrink: 0;
-        }
-        .faq-accordion .accordion-body {
-            padding: 0 1.35rem 1.35rem;
-            color: #555;
-            line-height: 1.75;
-            font-size: 0.98rem;
-        }
-        .faq-ref {
-            display: block;
-            margin-top: 0.75rem;
-            font-size: 0.85rem;
-            color: var(--primary-green);
-            font-weight: 600;
-        }
-        .faq-ref i {
-            color: var(--accent-gold);
-        }
-        .faq-cta {
-            background: linear-gradient(135deg, var(--light-green), #fff);
-            border: 1px solid #d7ead9;
-            border-radius: 12px;
-        }
-        /* Mobile / small screens */
-        @media (max-width: 576px) {
-            .faq-accordion .accordion-button {
-                font-size: 0.95rem;
-                padding: 1rem;
-            }
-            .faq-accordion .accordion-body {
-                font-size: 0.92rem;
-                padding: 0 1rem 1rem;
-            }
-            .faq-ref {
-                font-size: 0.8rem;
-            }
-        }
-
-        /* Custom Alert Notification */
-        .toast-container {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1060;
-        }
-
-        /* Blog post body: aik uniform text size (lead / normal ka bara-chhota khatam) */
-        main .col-lg-8 > p, main .col-lg-8 > ul li { font-size: 1.05rem; line-height: 1.9; }
-        main .col-lg-8 > h2 { font-size: 1.6rem; }
-    </style>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"What is Sadaqah Jariyah?","datePublished":"2026-11-03","author":{"@type":"Organization","name":"Sadaqah Jariyah"},"mainEntityOfPage":"https://mhassan-dev13.github.io/Earn-Eternal-Rewards-Even-After-Death/blog-what-is-sadaqah-jariyah.html"}</script>
 </head>
 <body>
@@ -241,33 +41,37 @@
         </div>
     </nav>
 
-    <header class="py-5" style="background: linear-gradient(135deg, rgba(10, 92, 54, 0.95), rgba(5, 46, 27, 0.95)); color: white;">
-        <div class="container py-4">
-            <p class="mb-2 opacity-75"><a href="blog.html" class="text-white text-decoration-underline">&larr; Back to Blog</a> &nbsp;|&nbsp; 3 November 2026</p>
-            <h1 class="fw-bold">What is Sadaqah Jariyah?</h1>
-            <p class="lead opacity-90 mb-0">Ongoing charity, explained simply: what it is, what counts, and how it differs from one-time sadaqah.</p>
+    <header class="blog-hero">
+        <div class="container">
+            <div class="hero-top">
+                <a href="blog.html" class="back-pill">&larr; Back to Blog</a>
+                <span class="date-chip">3 November 2026</span>
+            </div>
+            <h1>What is Sadaqah Jariyah?</h1>
+            <p class="lead">Ongoing charity, explained simply: what it is, what counts and how it differs from one-time sadaqah.</p>
         </div>
     </header>
 
-    <main class="container py-5">
-        <div class="row justify-content-center"><div class="col-12 col-lg-8">
-            <p style="line-height:1.9;">Sadaqah Jariyah is charity that keeps giving after the giver has gone. Unlike a one-time gift, whose benefit ends when it is used up, Sadaqah Jariyah keeps producing reward for as long as its benefit continues. That is why it is also called ongoing charity, continuous charity, and ceaseless charity.</p>
-            <p style="line-height:1.9;">The foundation of this idea is a well-known hadith. The Prophet Muhammad (peace be upon him) said: “When a person dies, his deeds come to an end except for three: ongoing charity (Sadaqah Jariyah), beneficial knowledge, or a righteous child who prays for him.” (Sahih Muslim 1631).</p>
-            <p style="line-height:1.9;">Three things in that hadith deserve attention. First, the reward is not tied to the size of the gift. A small gift that keeps helping can outlast a large gift that ends quickly. Second, the benefit must reach other people. Third, the reward continues even when the giver can no longer do anything new.</p>
+    <main class="container pb-5">
+        <div class="row justify-content-center"><div class="col-12 col-lg-8 blog-card">
+            <p>Sadaqah Jariyah is charity that keeps giving after the giver has gone. Unlike a one-time gift, whose benefit ends when it is used up, Sadaqah Jariyah keeps producing reward for as long as its benefit continues. That is why it is also called ongoing charity, continuous charity and ceaseless charity. That, in one sentence, is the sadaqah jariyah definition: a good deed whose reward keeps flowing even after the giver has gone.</p>
+            <p>The foundation of this idea is a well-known hadith. The Prophet Muhammad (peace be upon him) said:</p>
+            <blockquote class="blog-quote">"When a person dies, his deeds come to an end except for three: ongoing charity (Sadaqah Jariyah), beneficial knowledge or a righteous child who prays for him."<cite> <i>Sahih Muslim 1631</i></cite></blockquote>
+            <p>Three things in that hadith deserve attention. First, the reward is not tied to the size of the gift. A small gift that keeps helping can outlast a large gift that ends quickly. Second, the benefit must reach other people. Third, the reward continues even when the giver can no longer do anything new.</p>
             <h2 class="fw-bold mt-5 mb-3">What counts as Sadaqah Jariyah?</h2>
-            <p style="line-height:1.9;">The classic examples are easy to recognise: a masjid that people pray in, a water well that people drink from, a tree that gives shade and fruit, a Quran that people read from, and knowledge that people learn and pass on. In each case, the original act is finished, but its benefit goes on.</p>
-            <p style="line-height:1.9;">Other acts also count, and this is where many people miss opportunities. A traveller’s shelter, a school or hospital building, education for an orphan, and a waqf — an endowment whose benefit is dedicated for good — all fit the same pattern. The test is simple: does the benefit continue after you?</p>
-            <h2 class="fw-bold mt-5 mb-3">Sadaqah Jariyah, Sadaqah, and Zakat — the difference</h2>
-            <ul style="line-height:1.9;">
-                <li><strong>Sadaqah (one-time):</strong> food for a hungry person today. The benefit is real, but it ends when the food is eaten.</li>
-                <li><strong>Sadaqah Jariyah:</strong> a water well, a masjid, a tree, or knowledge that keeps benefiting people.</li>
-                <li><strong>Zakat:</strong> the obligatory annual charity in Islam, with its own rules, rates, and eligible recipients.</li>
-                <li><strong>Waqf:</strong> an endowment set aside so its benefit continues, often for generations.</li>
+            <p>The classic examples are easy to recognise: A Mosque that people pray in a water well that people drink from, A tree that gives shade and fruit, A Quran that people read from and knowledge that people learn and pass on. In each case, the original act is finished but its benefit goes on. That is what counts as Sadaqah Jariyah not the size of the gift, but whether its benefit continues after you.</p>
+            <p>Other acts also count and this is where many people miss opportunities. A traveller's shelter, a school or hospital building, education for an orphan and a waqf an endowment whose benefit is dedicated for good all fit the same pattern. The test is simple: does the benefit continue after you?</p>
+            <h2 class="fw-bold mt-5 mb-3">Sadaqah Jariyah, Sadaqah and Zakat the difference</h2>
+            <ul>
+                <li><strong>Sadaqah (one-time):</strong> Food for a hungry person today. The benefit is real, but it ends when the food is eaten.</li>
+                <li><strong>Sadaqah Jariyah:</strong> A water well, a Mosque, a tree or knowledge that keeps benefiting people.</li>
+                <li><strong>Zakat:</strong> The obligatory annual charity in Islam with its own rules rates and eligible recipients.</li>
+                <li><strong>Waqf:</strong> An endowment set aside so its benefit continues, often for generations.</li>
             </ul>
             <h2 class="fw-bold mt-5 mb-3">How to start, even with little money</h2>
-            <p style="line-height:1.9;">You do not need to build a whole masjid to start. A small contribution to a masjid project counts. Teaching one person a useful skill, sharing beneficial knowledge, or planting a tree are all within reach. The hadith about consistency is worth remembering here: the most beloved deeds to Allah are the most consistent, even if small (Sahih al-Bukhari 6465).</p>
-            <p style="line-height:1.9;">Start with one act, make it consistent, and let it grow. That is the practical meaning of Sadaqah Jariyah — a small seed that keeps giving, long after the hand that planted it is gone.</p>
-<p style="line-height:1.9;">See the full list on the home page: <a href="index.html#rewards">6 Acts That Earn Rewards Even After Death</a>.</p>
+            <p>You do not need to build a whole masjid to start. A small contribution to a masjid project counts. Teaching one person a useful skill, sharing beneficial knowledge or planting a tree are all within reach. The hadith about consistency is worth remembering here: The most beloved deeds to Allah are the most consistent, even if small (Sahih al-Bukhari 6465).</p>
+            <p>Start with one act, make it consistent and let it grow. That is the practical meaning of Sadaqah Jariyah a small seed that keeps giving, long after the hand that planted it is gone.</p>
+            <p>See the full list on the home page: <a href="index.html#rewards">6 Acts That Earn Rewards Even After Death</a>.</p>
             <hr class="my-5">
             <p><a href="blog.html" class="btn btn-outline-success rounded-pill px-4">&larr; Back to all blog posts</a> <a href="index.html#rewards" class="btn btn-success rounded-pill px-4 ms-2">View the 6 Acts</a></p>
         </div></div>
@@ -276,7 +80,7 @@
     <footer class="bg-dark text-white text-center py-4">
         <div class="container">
             <p class="mb-1 fw-medium">"May Allah help and guide everyone."</p>
-            <small class="opacity-50">&copy; 2026 Sadaqah Jariyah Platform. Built Responsively.</small>
+            <small class="opacity-50">&copy; 2026 Sadaqah Jariyah Platform.</small>
         </div>
     </footer>
 
