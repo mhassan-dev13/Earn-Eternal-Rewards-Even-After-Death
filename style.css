@@ -202,3 +202,124 @@ main .col-lg-8 > h2 { font-size: 1.6rem; }
 .contact-card:hover { transform: none !important; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03) !important; }
 footer { line-height: 1.6; }
 footer p, footer small { display: block; }
+
+/* ============ BLOG POST HERO BANNER — DESIGN 3 ============ */
+.blog-hero {
+    background: linear-gradient(135deg, rgba(10, 92, 54, 0.88), rgba(5, 46, 27, 0.92)),
+                url('https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&q=80&w=1600') no-repeat center center/cover;
+    color: #fff;
+    padding: 3.5rem 0 7rem;
+}
+.blog-hero .hero-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+}
+.blog-hero .back-pill {
+    display: inline-block;
+    background: #fff;
+    color: var(--primary-green);
+    font-weight: 600;
+    padding: 0.5rem 1.1rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.blog-hero .back-pill:hover {
+    background: var(--light-green);
+    color: var(--primary-green);
+}
+.blog-hero .date-chip {
+    display: inline-block;
+    background: #fff;
+    color: var(--dark-text);
+    font-weight: 600;
+    padding: 0.5rem 1.1rem;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.blog-hero h1 {
+    font-weight: 700;
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 0.75rem;
+}
+.blog-hero .lead {
+    opacity: 0.92;
+    margin-bottom: 0;
+}
+
+/* Blog article card overlapping the hero */
+.blog-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+    padding: 2.5rem;
+    margin-top: -4.5rem;
+    position: relative;
+    z-index: 2;
+}
+.blog-card p, .blog-card ul li {
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
+.blog-card h2 {
+    color: var(--primary-green);
+    font-size: 1.6rem;
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+.blog-card h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--accent-gold);
+}
+
+/* Hadith quote card inside a blog post */
+.blog-quote {
+    background: var(--light-green);
+    border: 1px solid #d7ead9;
+    border-left: 4px solid var(--accent-gold);
+    border-radius: 12px;
+    padding: 1.25rem 1.75rem 1.5rem;
+    margin: 1.75rem 0;
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
+.blog-quote::before {
+    content: "\201C";
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 3rem;
+    line-height: 1;
+    color: var(--accent-gold);
+}
+.blog-quote cite {
+    display: block;
+    margin-top: 0.75rem;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--primary-green);
+    font-size: 0.95rem;
+}
+
+@media (max-width: 576px) {
+    .blog-hero {
+        padding: 2rem 0 5.5rem;
+    }
+    .blog-hero .hero-top {
+        margin-bottom: 1.75rem;
+    }
+    .blog-card {
+        padding: 1.5rem 1.25rem;
+        margin-top: -3.5rem;
+    }
+}
