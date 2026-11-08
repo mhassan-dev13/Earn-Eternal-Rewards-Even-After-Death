@@ -3,218 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="rfWoy1HWtlaCHy5CN8coHj37R3y__MUSgHewu0D3lo8" />    
+    <meta name="google-site-verification" content="rfWoy1HWtlaCHy5CN8coHj37R3y__MUSgHewu0D3lo8" />
     <meta name="p:domain_verify" content="38b4a01f065a7c1755214fce3450b47c"/>
     <link rel="canonical" href="https://mhassan-dev13.github.io/Earn-Eternal-Rewards-Even-After-Death/blog.html">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Blog | Sadaqah Jariyah: Ongoing Charity Articles</title>
-    <meta name="description" content="Blog: short articles on Sadaqah Jariyah, ongoing charity, sadaqah jariyah for deceased parents, and how to start with little money.">
+    <meta name="description" content="Blog: short articles on Sadaqah Jariyah, ongoing charity, sadaqah jariyah for deceased parents and how to start with little money.">
 
     <!-- Social sharing (WhatsApp / Facebook preview ke liye) -->
     <meta property="og:title" content="Blog | Sadaqah Jariyah: Ongoing Charity Articles">
-    <meta property="og:description" content="Blog: short articles on Sadaqah Jariyah, ongoing charity, sadaqah jariyah for deceased parents, and how to start with little money.">
+    <meta property="og:description" content="Blog: short articles on Sadaqah Jariyah, ongoing charity, sadaqah jariyah for deceased parents and how to start with little money.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mhassan-dev13.github.io/Earn-Eternal-Rewards-Even-After-Death/">
-
-
-    <style>
-        :root {
-            --primary-green: #0A5C36;
-            --light-green: #E8F5E9;
-            --accent-gold: #C5A880;
-            --dark-text: #2B303A;
-            --light-bg: #F8F9FA;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            color: var(--dark-text);
-            background-color: var(--light-bg);
-            overflow-x: hidden;
-        }
-
-        /* Sticky navbar ke neeche anchor headings chhupne se bachane ke liye */
-        header[id], section[id], main[id] {
-            scroll-margin-top: 76px;
-        }
-
-        /* Navbar Styling */
-        .navbar {
-            background-color: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
-            transition: all 0.3s ease;
-        }
-        .navbar-brand {
-            font-weight: 700;
-            color: var(--primary-green) !important;
-            letter-spacing: 0.5px;
-        }
-
-        /* Hero Section */
-        .hero-section {
-            background: linear-gradient(135deg, rgba(10, 92, 54, 0.9), rgba(5, 46, 27, 0.95)),
-                        url('https://images.pexels.com/photos/36513378/pexels-photo-36513378/free-photo-of-coran-abierto-con-rosarios-en-una-mezquita.jpeg?auto=compress&cs=tinysrgb&w=1920') no-repeat center center/cover;
-            min-height: 80vh;
-            display: flex;
-            align-items: center;
-            color: white;
-            position: relative;
-        }
-        .hero-title {
-            font-weight: 700;
-            font-size: 3.5rem;
-            margin-bottom: 1.5rem;
-        }
-        @media (max-width: 768px) {
-            .hero-title { font-size: 2.3rem; }
-        }
-
-        /* Card Custom Styling */
-        .reward-card {
-            background: #ffffff;
-            border: none;
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
-            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
-            height: 100%;
-        }
-        .reward-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(10, 92, 54, 0.12);
-        }
-        .card-img-wrapper {
-            position: relative;
-            height: 220px;
-            overflow: hidden;
-        }
-        .card-img-top {
-            object-fit: cover;
-            height: 100%;
-            width: 100%;
-            transition: transform 0.5s ease;
-        }
-        .reward-card:hover .card-img-top {
-            transform: scale(1.08);
-        }
-        .icon-badge {
-            position: absolute;
-            bottom: -25px;
-            right: 25px;
-            background: var(--primary-green);
-            color: white;
-            width: 55px;
-            height: 55px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.4rem;
-            border: 4px solid #fff;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-            z-index: 2;
-        }
-
-        /* Professional Scroll Animations Hooks */
-        .reveal {
-            opacity: 0;
-            transform: translateY(40px);
-            transition: all 0.8s cubic-bezier(0.215, 0.610, 0.355, 1);
-        }
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Share Section Styling */
-        .share-box {
-            background: linear-gradient(135deg, var(--light-green), #fff);
-            border-left: 5px solid var(--primary-green);
-            border-radius: 12px;
-        }
-
-        /* ============ FAQ SECTION STYLING ============ */
-        .faq-section {
-            background: #ffffff;
-        }
-        .faq-heading {
-            font-size: clamp(1.6rem, 4vw, 2.25rem);
-        }
-        .faq-accordion .accordion-item {
-            border: 1px solid #e9ecef;
-            border-radius: 14px !important;
-            overflow: hidden;
-            margin-bottom: 0.9rem;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.03);
-        }
-        .faq-accordion .accordion-button {
-            font-weight: 600;
-            font-size: 1.02rem;
-            color: var(--dark-text);
-            background: #ffffff;
-            padding: 1.15rem 1.35rem;
-            gap: 0.75rem;
-            text-align: left;
-        }
-        .faq-accordion .accordion-button:not(.collapsed) {
-            color: var(--primary-green);
-            background: var(--light-green);
-            box-shadow: none;
-        }
-        .faq-accordion .accordion-button:focus {
-            box-shadow: 0 0 0 0.2rem rgba(10, 92, 54, 0.15);
-            border-color: transparent;
-        }
-        .faq-accordion .accordion-button::after {
-            flex-shrink: 0;
-        }
-        .faq-accordion .accordion-body {
-            padding: 0 1.35rem 1.35rem;
-            color: #555;
-            line-height: 1.75;
-            font-size: 0.98rem;
-        }
-        .faq-ref {
-            display: block;
-            margin-top: 0.75rem;
-            font-size: 0.85rem;
-            color: var(--primary-green);
-            font-weight: 600;
-        }
-        .faq-ref i {
-            color: var(--accent-gold);
-        }
-        .faq-cta {
-            background: linear-gradient(135deg, var(--light-green), #fff);
-            border: 1px solid #d7ead9;
-            border-radius: 12px;
-        }
-        /* Mobile / small screens */
-        @media (max-width: 576px) {
-            .faq-accordion .accordion-button {
-                font-size: 0.95rem;
-                padding: 1rem;
-            }
-            .faq-accordion .accordion-body {
-                font-size: 0.92rem;
-                padding: 0 1rem 1rem;
-            }
-            .faq-ref {
-                font-size: 0.8rem;
-            }
-        }
-
-        /* Custom Alert Notification */
-        .toast-container {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1060;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -238,7 +41,7 @@
     <header class="py-5" style="background: linear-gradient(135deg, rgba(10, 92, 54, 0.95), rgba(5, 46, 27, 0.95)); color: white;">
         <div class="container py-4">
             <h1 class="fw-bold">Blog</h1>
-            <p class="lead opacity-90 mb-0">Short articles on ongoing charity — new posts are added as cards below.</p>
+            <p class="lead opacity-90 mb-0">Articles on ongoing charity in Islam what counts as Sadaqah Jariyah, giving for deceased parents and starting with little money. New posts are added as cards below.</p>
         </div>
     </header>
 
@@ -249,7 +52,7 @@
                 <div class="card reward-card"><div class="card-body p-4">
                     <small class="text-muted">3 November 2026</small>
                     <h4 class="h5 fw-bold mt-2">What is Sadaqah Jariyah?</h4>
-                    <p class="text-muted">Ongoing charity — a good deed whose reward keeps flowing for as long as people benefit from it, even after death.</p>
+                    <p class="text-muted">Ongoing charity: A good deed whose reward keeps flowing for as long as people benefit from it, even after death.</p>
                     <a href="blog-what-is-sadaqah-jariyah.html" class="btn btn-success rounded-pill">Read More</a>
                 </div></div>
             </div>
@@ -257,7 +60,7 @@
                 <div class="card reward-card"><div class="card-body p-4">
                     <small class="text-muted">3 November 2026</small>
                     <h4 class="h5 fw-bold mt-2">Sadaqah Jariyah for Deceased Parents</h4>
-                    <p class="text-muted">How to honour deceased parents with lasting charity — water, education, a masjid, or a tree, given in their name.</p>
+                    <p class="text-muted">How to honour deceased parents with lasting charity water, education, a masjid or a tree, given in their name.</p>
                     <a href="blog-sadaqah-jariyah-for-deceased-parents.html" class="btn btn-success rounded-pill">Read More</a>
                 </div></div>
             </div>
@@ -265,7 +68,7 @@
                 <div class="card reward-card"><div class="card-body p-4">
                     <small class="text-muted">3 November 2026</small>
                     <h4 class="h5 fw-bold mt-2">How to Start With Little or No Money</h4>
-                    <p class="text-muted">Plant a tree, share knowledge, or give a small amount regularly — consistency beats a large deed done once.</p>
+                    <p class="text-muted">Plant a tree, share knowledge or give a small amount regularly consistency beats a large deed done once.</p>
                     <a href="blog-how-to-start-sadaqah-jariyah-little-money.html" class="btn btn-success rounded-pill">Read More</a>
                 </div></div>
             </div>
@@ -276,7 +79,7 @@
     <footer class="bg-dark text-white text-center py-4">
         <div class="container">
             <p class="mb-1 fw-medium">"May Allah help and guide everyone."</p>
-            <small class="opacity-50">&copy; 2026 Sadaqah Jariyah Platform. Built Responsively.</small>
+            <small class="opacity-50">&copy; 2026 Sadaqah Jariyah Platform.</small>
         </div>
     </footer>
 
