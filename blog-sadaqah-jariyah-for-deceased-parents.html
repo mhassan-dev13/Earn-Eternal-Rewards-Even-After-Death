@@ -9,216 +9,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Sadaqah Jariyah for Deceased Parents | Sadaqah Jariyah</title>
-    <meta name="description" content="Sadaqah Jariyah for deceased parents: how charity on their behalf benefits them, with Bukhari 1388 and Abu Dawud 1679, and practical ways to give in their name.">
+    <meta name="description" content="Sadaqah Jariyah for deceased parents: how charity on their behalf benefits them with Bukhari 1388 and Abu Dawud 1679 and practical ways to give in their name.">
 
     <!-- Social sharing (WhatsApp / Facebook preview ke liye) -->
     <meta property="og:title" content="Sadaqah Jariyah for Deceased Parents | Sadaqah Jariyah">
-    <meta property="og:description" content="Sadaqah Jariyah for deceased parents: how charity on their behalf benefits them, with Bukhari 1388 and Abu Dawud 1679, and practical ways to give in their name.">
+    <meta property="og:description" content="Sadaqah Jariyah for deceased parents: how charity on their behalf benefits them with Bukhari 1388 and Abu Dawud 1679 and practical ways to give in their name.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mhassan-dev13.github.io/Earn-Eternal-Rewards-Even-After-Death/blog-sadaqah-jariyah-for-deceased-parents.html">
 
-
-    <style>
-        :root {
-            --primary-green: #0A5C36;
-            --light-green: #E8F5E9;
-            --accent-gold: #C5A880;
-            --dark-text: #2B303A;
-            --light-bg: #F8F9FA;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            color: var(--dark-text);
-            background-color: var(--light-bg);
-            overflow-x: hidden;
-        }
-
-        /* Sticky navbar ke neeche anchor headings chhupne se bachane ke liye */
-        header[id], section[id], main[id] {
-            scroll-margin-top: 76px;
-        }
-
-        /* Navbar Styling */
-        .navbar {
-            background-color: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
-            transition: all 0.3s ease;
-        }
-        .navbar-brand {
-            font-weight: 700;
-            color: var(--primary-green) !important;
-            letter-spacing: 0.5px;
-        }
-
-        /* Hero Section */
-        .hero-section {
-            background: linear-gradient(135deg, rgba(10, 92, 54, 0.9), rgba(5, 46, 27, 0.95)),
-                        url('https://images.pexels.com/photos/36513378/pexels-photo-36513378/free-photo-of-coran-abierto-con-rosarios-en-una-mezquita.jpeg?auto=compress&cs=tinysrgb&w=1920') no-repeat center center/cover;
-            min-height: 80vh;
-            display: flex;
-            align-items: center;
-            color: white;
-            position: relative;
-        }
-        .hero-title {
-            font-weight: 700;
-            font-size: 3.5rem;
-            margin-bottom: 1.5rem;
-        }
-        @media (max-width: 768px) {
-            .hero-title { font-size: 2.3rem; }
-        }
-
-        /* Card Custom Styling */
-        .reward-card {
-            background: #ffffff;
-            border: none;
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
-            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
-            height: 100%;
-        }
-        .reward-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(10, 92, 54, 0.12);
-        }
-        .card-img-wrapper {
-            position: relative;
-            height: 220px;
-            overflow: hidden;
-        }
-        .card-img-top {
-            object-fit: cover;
-            height: 100%;
-            width: 100%;
-            transition: transform 0.5s ease;
-        }
-        .reward-card:hover .card-img-top {
-            transform: scale(1.08);
-        }
-        .icon-badge {
-            position: absolute;
-            bottom: -25px;
-            right: 25px;
-            background: var(--primary-green);
-            color: white;
-            width: 55px;
-            height: 55px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.4rem;
-            border: 4px solid #fff;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-            z-index: 2;
-        }
-
-        /* Professional Scroll Animations Hooks */
-        .reveal {
-            opacity: 0;
-            transform: translateY(40px);
-            transition: all 0.8s cubic-bezier(0.215, 0.610, 0.355, 1);
-        }
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Share Section Styling */
-        .share-box {
-            background: linear-gradient(135deg, var(--light-green), #fff);
-            border-left: 5px solid var(--primary-green);
-            border-radius: 12px;
-        }
-
-        /* ============ FAQ SECTION STYLING ============ */
-        .faq-section {
-            background: #ffffff;
-        }
-        .faq-heading {
-            font-size: clamp(1.6rem, 4vw, 2.25rem);
-        }
-        .faq-accordion .accordion-item {
-            border: 1px solid #e9ecef;
-            border-radius: 14px !important;
-            overflow: hidden;
-            margin-bottom: 0.9rem;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.03);
-        }
-        .faq-accordion .accordion-button {
-            font-weight: 600;
-            font-size: 1.02rem;
-            color: var(--dark-text);
-            background: #ffffff;
-            padding: 1.15rem 1.35rem;
-            gap: 0.75rem;
-            text-align: left;
-        }
-        .faq-accordion .accordion-button:not(.collapsed) {
-            color: var(--primary-green);
-            background: var(--light-green);
-            box-shadow: none;
-        }
-        .faq-accordion .accordion-button:focus {
-            box-shadow: 0 0 0 0.2rem rgba(10, 92, 54, 0.15);
-            border-color: transparent;
-        }
-        .faq-accordion .accordion-button::after {
-            flex-shrink: 0;
-        }
-        .faq-accordion .accordion-body {
-            padding: 0 1.35rem 1.35rem;
-            color: #555;
-            line-height: 1.75;
-            font-size: 0.98rem;
-        }
-        .faq-ref {
-            display: block;
-            margin-top: 0.75rem;
-            font-size: 0.85rem;
-            color: var(--primary-green);
-            font-weight: 600;
-        }
-        .faq-ref i {
-            color: var(--accent-gold);
-        }
-        .faq-cta {
-            background: linear-gradient(135deg, var(--light-green), #fff);
-            border: 1px solid #d7ead9;
-            border-radius: 12px;
-        }
-        /* Mobile / small screens */
-        @media (max-width: 576px) {
-            .faq-accordion .accordion-button {
-                font-size: 0.95rem;
-                padding: 1rem;
-            }
-            .faq-accordion .accordion-body {
-                font-size: 0.92rem;
-                padding: 0 1rem 1rem;
-            }
-            .faq-ref {
-                font-size: 0.8rem;
-            }
-        }
-
-        /* Custom Alert Notification */
-        .toast-container {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1060;
-        }
-
-        /* Blog post body: aik uniform text size (lead / normal ka bara-chhota khatam) */
-        main .col-lg-8 > p, main .col-lg-8 > ul li { font-size: 1.05rem; line-height: 1.9; }
-        main .col-lg-8 > h2 { font-size: 1.6rem; }
-    </style>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Sadaqah Jariyah for Deceased Parents","datePublished":"2026-11-03","author":{"@type":"Organization","name":"Sadaqah Jariyah"},"mainEntityOfPage":"https://mhassan-dev13.github.io/Earn-Eternal-Rewards-Even-After-Death/blog-sadaqah-jariyah-for-deceased-parents.html"}</script>
 </head>
 <body>
@@ -241,30 +41,35 @@
         </div>
     </nav>
 
-    <header class="py-5" style="background: linear-gradient(135deg, rgba(10, 92, 54, 0.95), rgba(5, 46, 27, 0.95)); color: white;">
-        <div class="container py-4">
-            <p class="mb-2 opacity-75"><a href="blog.html" class="text-white text-decoration-underline">&larr; Back to Blog</a> &nbsp;|&nbsp; 3 November 2026</p>
-            <h1 class="fw-bold">Sadaqah Jariyah for Deceased Parents</h1>
-            <p class="lead opacity-90 mb-0">Can charity benefit your deceased parents? What the hadith say, and practical ways to give in their name.</p>
+    <header class="blog-hero">
+        <div class="container">
+            <div class="hero-top">
+                <a href="blog.html" class="back-pill">&larr; Back to Blog</a>
+                <span class="date-chip">3 November 2026</span>
+            </div>
+            <h1>Sadaqah Jariyah for Deceased Parents</h1>
+            <p class="lead">Can charity benefit your deceased parents? What the hadith say and practical ways to give in their name.</p>
         </div>
     </header>
 
-    <main class="container py-5">
-        <div class="row justify-content-center"><div class="col-12 col-lg-8">
-            <p style="line-height:1.9;">One of the most asked questions about Sadaqah Jariyah is also one of the most personal: can I give it on behalf of my deceased parents? The short answer, from the hadith literature, is yes — charity given on behalf of a deceased person can benefit them.</p>
-            <p style="line-height:1.9;">A narration in Sahih al-Bukhari (1388) describes a man who asked about his mother, who had died suddenly. He asked whether charity on her behalf would benefit her, and the answer was yes. Another narration (Sunan Abi Dawud 1679) records Sa’d ibn Ubadah giving a water well on behalf of his mother. Water, in fact, is one of the most mentioned forms of this charity — a hadith in Musnad Ahmad (17058) calls giving water the best charity.</p>
+    <main class="container pb-5">
+        <div class="row justify-content-center"><div class="col-12 col-lg-8 blog-card">
+            <p>One of the most asked questions about Sadaqah Jariyah is also one of the most personal: can I give it on behalf of my deceased parents? The short answer, from the hadith literature, is yes charity given on behalf of a deceased person can benefit them.</p>
+            <p>A narration in Sahih al-Bukhari (1388) describes a man who asked about his mother, who had died suddenly. He asked whether charity on her behalf would benefit her and the answer was yes:</p>
+            <blockquote class="blog-quote">A man said to the Prophet (p.b.u.h), "My mother died suddenly and I thought that if she had lived she would have given alms. So, if I give alms now on her behalf, will she get the reward?" The Prophet (ﷺ) replied in the affirmative.<cite> Sahih al-Bukhari 1388</cite></blockquote>
+            <p>Another narration (Sunan Abi Dawud 1679) records Sa'd ibn Ubadah giving a water well on behalf of his mother. So giving sadaqah jariyah for parents for a deceased mother or a deceased father is an established practice and its reward reaches them. Water in fact is one of the most mentioned forms of this charity a hadith in Musnad Ahmad (17058) calls giving water the best charity.</p>
             <h2 class="fw-bold mt-5 mb-3">Practical ways to give for deceased parents</h2>
-            <ul style="line-height:1.9;">
+            <ul>
                 <li><strong>Build or contribute to a water well</strong> in their name, so every drink from it carries reward to them.</li>
-                <li><strong>Contribute to a masjid</strong> — even a small share of a building that people pray in.</li>
-                <li><strong>Give a Quran</strong> that will be read, or fund the teaching of Quran to others.</li>
-                <li><strong>Plant a tree</strong> that gives shade and fruit for years.</li>
-                <li><strong>Support education</strong> — an orphan’s schooling, or beneficial knowledge shared in their name.</li>
+                <li><strong>Contribute to a masjid:</strong> Even a small share of a building that people pray in.</li>
+                <li><strong>Give a Quran:</strong> That will be read or fund the teaching of Quran to others.</li>
+                <li><strong>Plant a tree:</strong> That gives shade and fruit for years.</li>
+                <li><strong>Support education:</strong> An orphan's schooling or beneficial knowledge shared in their name.</li>
             </ul>
             <h2 class="fw-bold mt-5 mb-3">What else benefits the deceased?</h2>
-            <p style="line-height:1.9;">Charity is one of three continuing deeds named in Sahih Muslim 1631: ongoing charity, beneficial knowledge, and a righteous child who prays for them. Dua for deceased parents is itself a continuing act of love, and it costs nothing.</p>
-            <p style="line-height:1.9;">If money is tight, start with dua, then add whatever small charity you can. A small, sincere, consistent act is better than a large act done once and forgotten. The reward is with Allah, and the intention — giving in their name, for their benefit — is what makes it Sadaqah Jariyah for them.</p>
-<p style="line-height:1.9;">Read the dedicated section on the home page: <a href="index.html#deceased">Sadaqah Jariyah for Deceased Parents and Loved Ones</a>.</p>
+            <p>Charity is one of three continuing deeds named in Sahih Muslim 1631: ongoing charity, beneficial knowledge and a righteous child who prays for them. Dua for deceased parents is itself a continuing act of love and it costs nothing.</p>
+            <p>If money is tight, start with dua then add whatever small charity you can. A small, sincere, consistent act is better than a large act done once and forgotten. The reward is with Allah and the intention giving in their name for their benefit is what makes it Sadaqah Jariyah for them.</p>
+            <p>Read the dedicated section on the home page: <a href="index.html#deceased">Sadaqah Jariyah for Deceased Parents and Loved Ones</a>.</p>
             <hr class="my-5">
             <p><a href="blog.html" class="btn btn-outline-success rounded-pill px-4">&larr; Back to all blog posts</a> <a href="index.html#rewards" class="btn btn-success rounded-pill px-4 ms-2">View the 6 Acts</a></p>
         </div></div>
@@ -273,7 +78,7 @@
     <footer class="bg-dark text-white text-center py-4">
         <div class="container">
             <p class="mb-1 fw-medium">"May Allah help and guide everyone."</p>
-            <small class="opacity-50">&copy; 2026 Sadaqah Jariyah Platform. Built Responsively.</small>
+            <small class="opacity-50">&copy; 2026 Sadaqah Jariyah Platform.</small>
         </div>
     </footer>
 
